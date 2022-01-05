@@ -15,9 +15,8 @@ Other sensors if camera fails as a detecting device- may attach an infared senso
 
 Goals :
 After messing around with uploading some music to its buzzer and playing with its needless amount of rgb lights to give it that just-right menacing look, I would like to program it to chase my dog using the smart wifi camera to target the color black (which my dog is) and
-to go in the direction of the color. Obviously any black objects will confuse it. It should be smart enough to do that, 
-a gesture sensor, infared, and the ultrasonic
-sensor should also do a good job of differentiating him from the non living black objects in the home (the vaccum cleaner, trash can, etc), then the machine should drive in that direction until it no longer senses infared and the color black. 
+to go in the direction of the color. Obviously any black objects will confuse it. It should easily be able to spot him given a gesture sensor, infared, and the ultrasonic
+sensor to help the camera input differentiate him (warm, moving , and black) from the non living black objects in the home (the vaccum cleaner, trash can, etc), then the machine should drive in that direction until it no longer senses infared and the color black. 
 
 
 
