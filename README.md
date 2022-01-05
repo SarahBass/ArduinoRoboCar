@@ -1,5 +1,5 @@
 # ArduinoRoboCar
-A robotic car created to annoy my poor dog
+A robotic car created to annoy my poor dog, Mr. Crunchy, a black and white pomeranian. 
 
 Parts:
 Roboduino Smart Robot Car from Yahboom (with so many sensors, a wifi camera, an amazing kit!)
