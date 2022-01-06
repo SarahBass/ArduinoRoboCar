@@ -52,13 +52,11 @@ type in your own color code , for example I used 010000 and it did display a dim
 out errors and freezing the machine. I would like to rewrite the code to display dimmed lights becuase I believe the 255 brightness is harmful
 to the eyes after long periods of time. 
 
-Car Whistle: I included a silly Harry Potter buzzer song and others under Car whistle that is not entirely my own creation. I highly reccomend visiting
-https://github.com/robsoncouto/arduino-songs to see an amazing library of songs. 
+Car Whistle: I included a silly Harry Potter buzzer song and others under Car whistle that is not entirely my own creation. I sped up my included version and the pins are set to the Roboduino (which is standard- so it will work on any similar model). It also lights the eyes up and changes the RGB to blue. 
 
-I sped up my included version and the pins are set to the Roboduino (which is standard- so it will work on any similar model). 
-I also actually completely rewrote parts of the song and modified the tempo to a shorter version and included a light display that is timed with the tempo perfectly if you want a shorter version. 
+- *Music Library Link: https://github.com/robsoncouto/arduino-songs robsoncouto has an amazing library of songs.* 
 
->While programming I suggest you dampen the noise or your cover your ears. They are incredibly cheap buzzer speakers that can harm people, children, or pets if safety isn't followed. You can't easily lower the sound with resistors or changed TONE values becuase it will change the song tones. I covered mine with a silicon earbud cover to dampen the buzzer physically. 
+>While programming I suggest you dampen the noise or your cover your ears. They are incredibly cheap buzzer speakers that can harm people, children, or pets if safety isn't followed. I covered mine with a silicone earbud cover to dampen the buzzer physically. 
 
 Ultrasonic Eyes : Written to change color when object is within range based on centimeters. Red for close object, Green for no object or far object. 
 Not the best system becuase the ultrasonic eyes often misread and will flash the wrong color. I may improve this with some sort of simple hamming code program
