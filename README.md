@@ -17,6 +17,8 @@ Wifi module must be detached from expansion board while usb port is in use or Ar
 
 - *See Link for CH340 Drive for Mac : https://sparks.gogo.co.nz/ch340.html*
 
+- *See Link for Expansion board : https://category.yahboom.net/products/uno-drive-expansion-board*
+
 
 Additional parts: | Descpriction:
 ----------------- | ------------------------------------------------------
@@ -56,6 +58,14 @@ I sped up my included version and the pins are set to the Roboduino (which is st
 I also actually completely rewrote parts of the song and modified the tempo to a shorter version and included a light display that is timed with the tempo perfectly if you want a shorter version. 
 
 >While programming I suggest you dampen the noise or your ears - honestly, these things are not made for safety - they are incredibly cheap buzzer speakers that can harm people, children, or pets if safety isn't followed. It sounds over cautious ,but I highly reccomend earplugs or noisecancelling earmuffs while programming becuase you will click it over and over again as you compile and change code. Moreover you can't easily lower the sound with resistors or changed TONE values becuase it will change the song tones. I covered mine with a silicon earbud cover to dampen the buzzer physically. 
+
+Ultrasonic Eyes : Written to change color when object is within range based on centimeters. Red for close object, Green for no object or far object. 
+Not the best system becuase the ultrasonic eyes often misread and will flash the wrong color. I may improve this with some sort of simple hamming code program
+to make it smoother. 
+
+Gesture Sensor- 
+Pins VL GND VCC SDA SCL and INT on expansion board 
+
  
  
 
