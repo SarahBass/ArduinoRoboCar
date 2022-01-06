@@ -1,16 +1,15 @@
 ------------------------------------------------------------------------------------------
 *ArduinoRoboCar*
 
-A robotic car created to follow and annoy a pet dog by filtering out environmental 
-data to target an object that is sensed with movement, color, and heat. 
+A robotic car that filters out environmental data to target a living object that is sensed with movement, color, and heat. 
 
 -------------------------------------------------------------------------------------------
 
 Needed Parts:                          | Description:
 -------                                | ------------------------------------------------------------------------------------------------
-Roboduino Smart Robot Car from Yahboom | Contains: wifi camera to phone, remote, rgb lights, buzzer, ultrasonic sensor, servos, TT motors and  wheels, tracking..   
+Roboduino Smart Robot Car from Yahboom | Contains: wifi camera to phone, remote, rgb lights, buzzer, ultrasonic sensor, servos, TT motors and  wheels, tracking.   
 
-*Warning: Roboduino is not easily compatible with Mac and will require you to fin mac version of CH340 Drive. Helloblock not Mac or Linux compatable. 
+*Warning: Roboduino is not easily compatible with Mac and will require you to find mac version of CH340 Drive. Helloblock not Mac or Linux compatable. 
 Wifi module must be detached from expansion board while usb port is in use or Arduino IDE will not work and will give error upon compile and run.*
 
 - *See Link for more information on Roboduino : http://www.yahboom.net/study/roboduino*
