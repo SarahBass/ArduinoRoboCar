@@ -9,6 +9,7 @@
 * @par History  
 *
 */
+#include "RGBLed.h"
 #include <Arduino.h>                 //Library file
 #include "./Adafruit_NeoPixel.h"     //Library file
 #define PIN 6                       //Define the pins of the RGB light
@@ -35,7 +36,15 @@ uint32_t brightwhite = strip.Color(255,255,255);   //green,red,blue
 uint32_t white = strip.Color(100,100,100);   //green,red,blue
 uint32_t dullwhite = strip.Color(10,10,10);   //green,red,blue
 uint32_t sortofwhite = strip.Color(1,1,1);   //green,red,blue
-
+#define RGB_GREEN    0xFF0000    //Define different color(green,red,blue)
+#define RGB_RED   0x00FF00
+#define RGB_BLUE    0x0000FF
+#define RGB_YELLOW  0xFFFF00
+#define RGB_PURPLE  0x00FFFF
+#define RGB_WHITE   0xFFFFFF
+#define RGB_OFF  0x000000
+const int RgbPin = 11;    //Define pin of Ultrasonic RGB light
+RGBLed mRgb(RgbPin,2);
 
 #define NOTE_B0  31
 #define NOTE_C1  33
@@ -181,7 +190,37 @@ int melody[] = {
   NOTE_G4, -1, 
   
 };
-
+int harrypotterxmasTempo[]={
+  2, 4, 
+  4, 8, 4, 
+  2, 4, 
+  2, 
+  2, 
+  4, 8, 4,
+  2,4,
+  1,
+  4,
+  4,8,4,
+  2, 4,
+  2, 4, 
+  2, 4, 
+  4, 8, 4, 
+  2, 4, 
+  1, 
+  4, 
+  2, 4, 
+  2, 4, 
+  2, 4, 
+  2, 4, 
+  4, 8, 4, 
+  2, 4, 
+  1, 4, 4, 
+  2, 4, 
+  2, 4,
+  2, 4, 
+  4, 8, 4,
+  2, 4, 
+  1};
 // sizeof gives the number of bytes, each int value is composed of two bytes (16 bits)
 // there are two values per note (pitch and duration), so for each note there are four bytes
 int notes = sizeof(melody) / sizeof(melody[0]) / 2;
@@ -204,6 +243,9 @@ void setup() {
   strip.show();
   strip.setPixelColor(i, blue);  //Make Onboard RGB light
       strip.show();
+       mRgb.setColor(1,RGB_OFF);
+    mRgb.setColor(2,RGB_OFF);
+    mRgb.show();
        delay(500);   
   // iterate over the notes of the melody. 
   // Remember, the array is twice the number of notes (notes + durations)
@@ -212,12 +254,18 @@ void setup() {
     // calculates the duration of each note
     divider = melody[thisNote + 1];
     if (divider > 0) {
+          mRgb.setColor(1,RGB_BLUE);
+          mRgb.setColor(2,RGB_BLUE);
+          mRgb.show();
       // regular note, just proceed
       noteDuration = (wholenote) / divider;
     } else if (divider < 0) {
       // dotted notes are represented with negative durations!!
       noteDuration = (wholenote) / abs(divider);
       noteDuration *= 1.5; // increases the duration in half for dotted notes
+          mRgb.setColor(1,RGB_PURPLE);
+          mRgb.setColor(2,RGB_PURPLE);
+          mRgb.show();
     }
     
     // we only play the note for 90% of the duration, leaving 10% as a pause
@@ -227,10 +275,11 @@ void setup() {
     delay(noteDuration);
     
     // stop the waveform generation before the next note.
-    noTone(buzzer);
-    
-    
+    noTone(buzzer); 
   }
+        mRgb.setColor(1,RGB_OFF);
+        mRgb.setColor(2,RGB_OFF);
+        mRgb.show();
 }
 
 void loop() {
