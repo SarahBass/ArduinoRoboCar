@@ -19,6 +19,7 @@ Wifi module must be detached from expansion board while usb port is in use or Ar
 
 - *See Link for Expansion board : https://category.yahboom.net/products/uno-drive-expansion-board*
 
+- *See Link for Gesture Sensor : https://learn.sparkfun.com/tutorials/apds-9960-rgb-and-gesture-sensor-hookup-guide/all
 
 Additional parts: | Descpriction:
 ----------------- | ------------------------------------------------------
@@ -26,7 +27,7 @@ a canakit 5V fan  | Cools Arduino while using the Wifi Camera Attachment
                  
 4 pin LCD screen  | To print out graphics or work as a serial monitor
 ----------------- | ------------------------------------------------------
-A gesture sensor  | To sense infared and movement to find target
+APD69860 gesture  | To sense infared, color, and movement to find target
 
 ### Code Information : 
 
@@ -63,8 +64,21 @@ Ultrasonic Eyes : Written to change color when object is within range based on c
 Not the best system becuase the ultrasonic eyes often misread and will flash the wrong color. I may improve this with some sort of simple hamming code program
 to make it smoother. 
 
-Gesture Sensor- 
-Pins VL GND VCC SDA SCL and INT on expansion board 
+Gesture Sensor and LCD Screen- 
+Pins: VL GND VCC SDA SCL and INT(2) on expansion board are connected to Arduino Uno original pins and use of VCC from bluetooth port.
+Pin VL is opitional but there is a 3.3 V pin available. I am using the 5V and GND pin on the other side of the Arduino Uno for the fan. 
+
+LCD Screen into designated LCD module on Expansion board : GND VCC SCL SDA 
+
+- *See The very cool Gesture Sensor Yahboom sells with a face led matrix: Link:https://category.yahboom.net/products/gesture*
+- *I already owned a gesture and color sensor from Amazon Link: https://www.amazon.com/gp/product/B01NACU412/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1*
+- *I also already owned a 4 pin LCD screen from Amazon link: https://www.amazon.com/gp/product/B082X9MGYR/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1*
+
+
+
+
+
+
 
  
  
