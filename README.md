@@ -50,11 +50,14 @@ out errors and freezing the machine. I would like to rewrite the code to display
 to the eyes after long periods of time. 
 
 Car Whistle: I included a silly Harry Potter buzzer song and others under Car whistle that is not entirely my own creation. I highly reccomend visiting
-https://github.com/robsoncouto/arduino-songs to see an amazing library of songs. I sped up my included version and the pins are
-set to the Roboduino (which is standard- so it will work on any similar model). 
-I also actually completely rewrote parts of the song and modified the tempo to a shorter version and included a light display that is timed with the tempo perfectly if you want a shorter version becuase the buzzer isn't great for your ears which is also under my Arduino clock. While programming I suggest you 
-dampen the noise - honestly, these things are not made for safety they are incredibly cheap buzzer speakers that can harm people or pets if safety isn't followed. 
+https://github.com/robsoncouto/arduino-songs to see an amazing library of songs. 
 
+I sped up my included version and the pins are set to the Roboduino (which is standard- so it will work on any similar model). 
+I also actually completely rewrote parts of the song and modified the tempo to a shorter version and included a light display that is timed with the tempo perfectly if you want a shorter version. 
+
+>While programming I suggest you dampen the noise or your ears - honestly, these things are not made for safety - they are incredibly cheap buzzer speakers that can harm people, children, or pets if safety isn't followed. It sounds over cautious ,but I highly reccomend earplugs or noisecancelling earmuffs while programming becuase you will click it over and over again as you compile and change code. Moreover you can't easily lower the sound with resistors or changed TONE values becuase it will change the song tones. I covered mine with a silicon earbud cover to dampen the buzzer physically. 
+ 
+ 
 
 
 
