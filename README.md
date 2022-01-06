@@ -20,7 +20,7 @@ Wifi module must be detached from expansion board while usb port is in use or Ar
 
 - *See Link for Gesture Sensor : https://learn.sparkfun.com/tutorials/apds-9960-rgb-and-gesture-sensor-hookup-guide/all
 
-Additional parts: | Descpriction:
+Additional parts: | Description:
 ----------------- | ------------------------------------------------------
 a canakit 5V fan  | Cools Arduino while using the Wifi Camera Attachment 
                  
