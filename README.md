@@ -34,7 +34,7 @@ The Code links are my personalizations of the code provided by the Roboduino sma
 
 The "breathing light" functions are deleted in my customizations and the brightness has been turned down on all RGB lights especially the single RGB pixel light. 
 
->Note: If you look at the code library, the single RGB pixel light has a library full of what I believe is meaningess functions surrounding a 8*8 Pixel light matrix game for a different product that is used to operate the single RGB light on the expansion board. The brightness (which is pre-set) at 255 is very bright. It seems a waste of space to have that library only to light up a single RGB LED. 
+>Note: If you look at the code library, The brightness (which is pre-set) at 255 is very bright. This was written in assembly code.
 
 
 On Board : A simple onboard customization to rest the machine as it displays a pink/purple led to indicate the mode and turns off both eyes.
