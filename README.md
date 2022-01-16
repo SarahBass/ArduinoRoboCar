@@ -54,7 +54,7 @@ Car Whistle: I included a silly Harry Potter buzzer song and others under Car wh
 
 Ultrasonic Eyes : Written to change color when object is within range based on centimeters. Red for close object, Green for no object or far object. 
 
->The ultrasonic eyes often misread incoming distance data. Some sort of simple hamming code program might make it smoother. 
+>The ultrasonic eyes often misread incoming distance data. Some sort of simple code to take the average might make it smoother. 
 
 Gesture Sensor and LCD Screen- 
 Pins: VL GND VCC SDA SCL and INT(2) on expansion board are connected to Arduino Uno original pins and use of VCC from bluetooth port.
